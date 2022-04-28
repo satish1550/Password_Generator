@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Generate Password</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://kit.fontawesome.com/239698b593.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="box">
+            <h1 id="line-1">Genarate a</h1>
+            <h2 id="line-2">random password</h2>
+            <h3 id="line-3">Never use an insecure password again.</h3>
+            <hr>
+            <div class="settings">
+                <div class="setting">
+                    <label for="length">password length</label>
+                    <input type="number" id="length" min="4" max="16" value="8">
+                </div>
+                <div class="setting">
+                    <label for="uppercase">Include uppercase letters</label>
+                    <input type="checkbox" id="uppercase" checked>
+                </div>
+                <div class="setting">
+                    <label for="lowercase">Include lowercase letters</label>
+                    <input type="checkbox" id="lowercase" checked>
+                </div>
+                <div class="setting">
+                    <label for="numbers">Include numbers</label>
+                    <input type="checkbox" id="numbers" checked>
+                </div>
+                <div class="setting">
+                    <label for="symbols">Include symbols</label>
+                    <input type="checkbox" id="symbols" checked>
+                </div>
+                <div>
+                    <butto class="btn btn-large" id="generate">Generate Password</button>
+                </div>
+                <hr>
+                <div class="result-box">
+                    <span id="result1"></span>
+                    <button class="btn" id="clipboard1"><i class="fa-solid fa-notes-medical"></i></button>
+                </div>
+                <div class="result-box">
+                    <span id="result2"></span>
+                    <button class="btn" id="clipboard2"><i class="fa-solid fa-notes-medical"></i></button>
+                </div>
+                <div class="result-box">
+                    <span id="result3"></span>
+                    <button class="btn" id="clipboard3"><i class="fa-solid fa-notes-medical"></i></button>
+                </div>
+                <div class="result-box">
+                    <span id="result4"></span>
+                    <button class="btn" id="clipboard4"><i class="fa-solid fa-notes-medical"></i></button>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

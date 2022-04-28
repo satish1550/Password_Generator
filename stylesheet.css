@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #5dfbdf;
+    color: rgb(14, 243, 7);
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    min-width: 100vh
+
+}
+
+p{
+    margin: 5px;
+}
+#line-1{
+    color: black;
+    padding-left: 0;
+}
+#line-1:hover{
+    color: aqua;
+}
+#line-2{
+    color: aquamarine;
+}
+#line-2:hover{
+    color: yellow;
+}
+#line-3{
+    color: azure;
+    font-style: italic;
+}
+#line-3:hover{
+    color: springgreen;
+}
+input[type="checkbox"]{
+    margin-right: 0;
+}
+.box{
+    background-color: #00c2ab;
+    box-shadow: 0px 6px 10px white;
+    padding-top: 0;
+    padding: 25px;
+    width: 450px;
+    max-width: 100%;
+    border-radius: 5px;
+    
+}
+.result-box{
+    background-color: #5dfbdf;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 30px;
+    width: 55%;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    color: black;
+    margin-left: 23%;
+}
+.result-box #result{
+    word-wrap: break-word;
+    max-width: calc(100%-50px);
+}
+.result-box .btn{
+    font-size: 15px;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    height: 20px;
+    width: 20px;
+
+}
+.btn{
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 2px 1px;
+    background-color: #008b74;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn-large{
+    display: block;
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 25%;
+    height: 25px;
+
+}
+.setting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+
+}
+@media screen and (max-width: 400px) {
+    .result-box{
+        font-size: 14px;
+    }
+}
+#generate{
+    color: aqua;
+}
